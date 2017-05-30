@@ -1,0 +1,25 @@
+#paineis-sobre {
+	margin-top: 20px;
+}
+.carrossel-text{
+	color: pink;
+}
+
+
+html, body {
+	background-image: url(img/img5.jpg);
+	height: 100%;
+	background-size: cover;
+	background-position: top center;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 1em;
+	margin-top: 20px;
+}
