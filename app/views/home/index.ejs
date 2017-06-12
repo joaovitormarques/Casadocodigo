@@ -1,5 +1,50 @@
 <html>
 <body>
-<h1>Você está na página principal. Divirta-se!</h1>
+	<h1>Você está na página principal. Divirta-se!</h1>
+	<div>
+		<form action="/home" method="post">
+			<div>
+				<label for="codigo">Código</label>
+				<input type="text" name="codigo" placeholder="Insira aqui o codigo"/>
+			</div>
+
+			<input type="submit" value="Gravar"/>
+		</form>
+	</div>
+
+
+
+	<script type="text/javascript" src="angular-min.js"></script>
+	<script type="text/javascript" src="ace-builds/src/ace.js"></script>
+	<script type="text/javascript" src="ace-builds/src/theme-chrome.js"></script>
+	<script type="text/javascript">
+var aceEditor = window.ace.edit("submissao");
+aceEditor.setOptions({
+   enableBasicAutocompletion: true, // the editor completes the statement when you hit Ctrl + Space
+   enableLiveAutocompletion: true, // the editor completes the statement while you are typing
+   showPrintMargin: false, // hides the vertical limiting strip
+   maxLines: Infinity,
+   fontSize: "100%" // ensures that the editor fits in the environment
+});
+aceEditor.setTheme("ace/theme/chrome");
+aceEditor.renderer.setOption("showLineNumbers", false); 
+aceEditor.getSession().setMode("ace/mode/javascript_expression");
+	/*var aceEditor = window.ace.edit(submissao);
+	aceEditor.setOptions({
+   enableBasicAutocompletion: true, // the editor completes the statement when you hit Ctrl + Space
+   enableLiveAutocompletion: true, // the editor completes the statement while you are typing
+   showPrintMargin: false, // hides the vertical limiting strip
+   maxLines: Infinity,
+   fontSize: "100%" // ensures that the editor fits in the environment
+});
+// defines the style of the editor
+aceEditor.setTheme("ace/theme/chrome");
+// hides line numbers (widens the area occupied by error and warning messages)
+aceEditor.renderer.setOption("showLineNumbers", false); 
+// ensures proper autocomplete, validation and highlighting of JavaScript code
+aceEditor.getSession().setMode("ace/mode/javascript_expression");
+*/
+</script>
+
 </body>
 </html>
